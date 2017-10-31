@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1 style="text-align: center">IE LIBRARY</h1>
+        <link href="styles/styles.css" type="text/css" rel=stylesheet>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            $("#sign").click(function(){
+                $("#tosign").slideToggle();
+            });
+        });
+        
+        
+        
+        </script>
+        
+    </head>
+    
+    <body>
+        
+        <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        
+      <a class="navbar-brand" href="index.html">IE LIBRARY</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+      
+      <li><a href="offers.html">offers</a></li>
+      <li><a href="others.html">others</a></li>
+      <li><a href="cart.html">cart</a></li>
+        <li><a href="contac.html">contact us</a></li>
+        <li><a href="login.html">login/sign up</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        
+    </ul>
+  </div>
+                
+</nav>
+        
+       
+    <center>
+             <div class="row">
+		<div class="twelve columns">
+        
+                 </div>
+            </div>
+        <div id=tosign style="display: none">  
+        <fieldset>
+            <legend>My form</legend>
+            
+            <form method="post" action="index.html" id="myform">
+                <table>
+                <tr>
+                    <td>name</td>
+                    <td><input type="text" placeholder="must be 2 letters at least" id="name"></td>
+                    </tr><tr>
+                     <td>surname</td>
+                    <td><input type="text" placeholder="must be 4 letters at least" id="surname"></td>
+                    </tr><tr>
+                    <td>user</td>
+                    <td><input type="text" placeholder="must be 2 letters at least" id="username"></td>
+                    </tr><tr>
+                     <td>password</td>
+                    <td><input type="text" placeholder="must be 8 letters at least" id="password"></td>
+                    </tr>
+                    <tr>
+                     <td>password2</td>
+                    <td><input type="text" placeholder="must be 8 letters at least" id="password2"></td>
+                    </tr>
+                    <tr>
+                        <td>email</td>
+                        <td><input type="email" placeholder="account@server.ext" name="email" id="email"></td>
+                    </tr>
+                    
+                    <tr>
+                    <td>Gender:</td>
+                        <td>
+                        male <input type="radio" name="gender" value="male" >
+                        female <input type="radio" name="gender" value="female">
+                        
+                        
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Age</td>
+                        <td><input type="number" min="18" max="99" name="age" placeholder="Insert yout age"></td>
+                    </tr>
+                    
+                    
+                    
+                    <tr>
+                        <td>credit card</td>
+                        <td><input type="text" placeholder="Inser you credit card number"></td>
+                    
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td> <input type="submit" value="send" name="send"></td>
+                        <td> <input type="reset" value="reset" name="reset"></td>
+                    </tr>
+                    
+                    
+                    
+                </table>
+            
+            
+            </form>         
+        
+        </fieldset>
+                 </div>
+        <div id=login>
+        <form method="post" action="firstsignup.html" id="nireforma">
+             <h1>login</h1>  
+          <table border="1px solid black">  
+              <tr>
+                    <td>user</td>
+                    <td><input type="text" name="username" placeholder="must be 2 letters at least" id="username"></td>
+                    </tr>
+            <tr>
+                     <td>password</td>
+                    <td><input type="text" name="password" placeholder="must be 8 letters at least" id="password"></td>
+                    
+            </tr>
+              <tr><td><input type="button" name="login" value="login" id="lin"></td>
+              <td><input type="button" name="sign" value="sign up" id="sign"></td>
+              </tr>
+              </table>
+            
+            
+        <h3>Login only for admin</h3>
+                <table border="1px solid black">
+            <tr>
+                    <td>user</td>
+                    <td><input type="text" name="username" placeholder="must be 2 letters at least" id="username"></td>
+                    </tr>
+            <tr>
+                     <td>password</td>
+                    <td><input type="text" name="password" placeholder="must be 8 letters at least" id="password"></td>
+                    
+            </tr>
+            <tr><td><input type="button" name="login" value="login" id="admin"></td></tr>
+                    </table>
+                    
+            </form> 
+            </div>
+            </center>
+    </body>
+    <footer style="text-align: center">Ismael Touceda and Eneko Garcia &copy; 2017</footer>
+</html>

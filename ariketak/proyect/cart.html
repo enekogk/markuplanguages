@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1 style="text-align: center">IE LIBRARY</h1>
+        <link href="styles/styles.css" type="text/css" rel=stylesheet>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script>
+         $(document).ready(function(){
+                    $("#bo1").click(function(){
+                        $("#ta1").slideToggle();
+                    });
+                });
+        $(document).ready(function(){
+                    $("#bo2").click(function(){
+                        $("#ta2").slideToggle();
+                    });
+                });
+        </script>
+            
+        
+    </head>
+    
+    <body>
+        
+        <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">home</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="offers.html">offers</a></li>
+        <li><a href="others.html">Others</a></li>
+        
+        <li><a href="contac.html">Contac us</a></li>
+          <li><a href="login.html">login/sign up</a></li>
+          <li><a href="profile.html">profile</a></li>
+          <li><a href="adminhome.html">Admin Home</a></li>
+          <li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+          <a href="atom.xml">
+            <img height="50px" width="50px" src="images/atom.png"/>
+        </a>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+        <center>
+      <table border="1px solid black" >
+          
+          <div  class="col-xs-12 col-sm-10 col-md-6 col-lg-3">
+          <tr>
+            <td><b>Id_product</b></td>
+            <td><b>Name</b></td>
+            <td><b>Prize</b></td>
+            <td><b>Quantity</b></td>
+            <td><b>Total</b></td>
+            <td><b>delete</b></td>
+          </tr>
+              </div>
+          <div  class="col-xs-12 col-sm-10 col-md-6 col-lg-3">
+          <tr id="ta1">
+            <td>2332</td>
+            <td>Harry Potter</td>
+            <td>29.95$</td>
+            <td>5</td>
+            <td>149,75$</td>
+            <td><input type="button" name="change" value="remove" id="bo1"></td>
+          </tr>
+              </div>
+          <div  class="col-xs-12 col-sm-10 col-md-6 col-lg-3">
+          <tr id="ta2">
+            <td>2232</td>
+            <td>Fast and furious</td>
+            <td>10$</td>
+            <td>2</td>
+            <td>20$</td>
+            <td><input type="button" name="change" value="remove" id="bo2"></td>
+          </tr>
+              </div>
+          <div  class="col-xs-12 col-sm-10 col-md-6 col-lg-3">
+          <tr>
+            <td>SubTotal</td>
+            <td>169.75</td>
+          </tr>
+              </div>
+          <div class="col-xs-12 col-sm-10 col-md-6 col-lg-3">
+          <tr>
+            <td>Total + iva</td>
+            <td>196,91$</td>
+          </tr>
+              </div>
+        <div class="col-xs-12 col-sm-10 col-md-6 col-lg-3">
+            <tr>
+            <td>
+                <input type="button" value="End and buy">
+            </td>
+            </tr>
+            
+          </div>
+          
+            </table>       
+
+        </center>
+    </body>
+    <footer style="text-align: center">Ismael Touceda and Eneko Garcia &copy; 2017</footer>
+</html>

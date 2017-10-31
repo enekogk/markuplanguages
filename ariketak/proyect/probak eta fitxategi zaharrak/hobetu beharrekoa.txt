@@ -1,0 +1,9 @@
+
+porifile aldatu, bat informazioa eta bestean pasahitza aldatzeko
+hamburger menu
+
+validatua egon behar du eta horizontal scroll bar-a ez da egon behar
+carritoa aldatu, lista hori kendu behar da
+
+responsive
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Markup languagues 2017-2018</title>
+            <link href="styles/styles.css" type="text/css" rel=stylesheet>
+            <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <script src="js/jquery-3.1.1.min.js"></script>
+            <script type="text/javascript">
+            $(document).ready(function(){
+                     $("#fast").click(function(){
+                    $(location).attr("href","fast.html")
+                });
+            });
+            $(document).ready(function(){
+                     $("#time").click(function(){
+                    $(location).attr("href","time.html")
+                });
+            });
+            </script>
+            <style>
+            #lehena{
+              align-content: center;
+              margin-right: 600px;
+              margin-left: 600px;
+            }
+            
+            </style>
+                
+    </head>
+    <body>
+        <h1 style="text-align: center">FILM RENTAL</h1>
+        <div style="text-align: center" id=lehena>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Home</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="offers.html">Offers</a></li>
+                  <li><a href="others.html">Others</a></li>
+                  
+                  <li><a href="contac.html">Contac us</a></li>
+                    <li><a href="login.html">login/sign up</a></li>
+                    <li><a href="profile.html">profile</a></li>
+                    
+                    
+                    
+                     
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+          </div>
+          <div> <!--nav-etik kanpo-->
+            <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3"> <!-- start the div 1-->
+              <table border="1px solid black" class="one" id="r1">
+                  <tr><td><h4>Fast and Furious</h4></td></tr>
+                  <tr><td><img src="images/9.jpg" alt="gnu" width="200px" height="220px"></td></tr>
+                  <tr><td><h5>Price=5$/per day <input type="button" value=Information id="fast"></h5></td></tr>
+                  
+              </table>
+          
+
+          </div>
+          <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3"> <!-- start the div 2-->
+            <table border="1px solid black" class="one" id="r1">
+                <tr><td><h4>Time</h4></td></tr>
+                <tr><td><img src="images/8.jpg" alt="gnu" width="200px" height="220px"></td></tr>
+                <tr><td><h5>Price=5$ <input type="button" value=Information id="time"></h5></td></tr>
+                
+            </table>
+        
+
+        </div> <!--end of the div 2.-->
+        
+    </body>
+</html>

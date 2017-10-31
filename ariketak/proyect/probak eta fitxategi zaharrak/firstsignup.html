@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <h1 style="text-align: center">IE LIBRARY</h1>
+            
+            <script src="js/jquery-3.1.1.min.js"></script>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                     $("#lin").click(function(){
+                    $(location).attr("href","home.html")
+                });
+                
+                    $(document).ready(function(){
+                     $("#sign").click(function(){
+                    $(location).attr("href","signup.html")
+                });
+                    
+            });
+                });
+                
+</script>
+    <style>
+        html{
+            background-color:aquamarine;
+        }
+        
+            
+            </style>
+    
+        </head>
+
+        <body>
+            <center style="margin-top: 100px;">
+    <h3>Congratulations for your sign up! Welcome to IE Library!</h3>
+            <h3>Now you have to log in for first time, be careful with all your data</h3>
+          <table border="1px solid black">  
+              <tr>
+                    <td>user</td>
+                    <td><input type="text" name="username" placeholder="must be 2 letters at least" id="username"></td>
+                    </tr>
+            <tr>
+                     <td>password</td>
+                    <td><input type="text" name="password" placeholder="must be 8 letters at least" id="password"></td>
+                    
+            </tr>
+              <tr><td><input type="button" name="login" value="login" id="lin"></td></tr>
+              </table>
+            </center>
+        </body>
+</html>

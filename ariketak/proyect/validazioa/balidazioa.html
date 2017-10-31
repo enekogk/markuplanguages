@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Inprimaki balidazioa</title>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+
+<script>
+$(document).ready(function(){
+	$('#signup').validate({
+		rules: {
+			email: {
+				required: true,
+				email:true
+				},
+			pasahitza: {
+				required: true,
+				rangelength:[8,16]  //luzeera 8 eta 16 karaktere bitartean
+				},
+			berretsi_pasahitza: {equalTo:'#pasahitza'}
+			
+			},     //rules-en bukaera
+		messages: {
+			email: {
+				required: "Idatzi emaila mesedez.",
+				email: "Hau ez da email helbidea."
+				},
+			pasahitza:{
+				required: 'Mesedez idatzi password-a',
+				rangelength:'Passwordak 8 eta 16 karaktere artean izan behar du.'
+				},
+			berretsi_pasahitza: {
+				equalTo: 'Passworda ez da berdina.'
+				}
+		},  //mezu bukaera
+		
+	});
+});
+
+</script>
+<style>
+body {font-family:verdana;
+	font-size:20px;
+	padding-left:20px;
+	} 
+
+input{ background-color:#F781F3;size:10;}
+
+form {border:5px solid gray;
+	width:400px;
+	height:350px;
+	background-color:#ccc;
+	padding:15px;
+	border-radius:6px;}
+</style>
+</head>
+<body>
+<h1>Inprimakia</h1>
+<br/>
+<form action="" method="post" id="signup">
+	<div>
+	  <label for="izena">Izena</label>
+	  <input name="izena" type="text"/>
+	</div>
+	<br/>
+        <div>
+	  <label for="email">Email helbidea</label>
+	  <input name="email" type="email"/>
+	</div>
+	<br/>
+	<div>
+	  <label for="pasahitza">Pasahitza</label>
+	  <input name="pasahitza" type="password"/>
+	</div>
+	<br/>
+	<div>
+	  <label for="berretsi_pasahitza">Berretsi_pasahitza</label>
+	  <input name="berretsi_pasahitza" type="password"/>
+	</div>
+	<br/>
+	<div>
+	  <label for="data">Urtebetetze data</label>
+	  <input name="data" type="date" />
+	</div>
+	<br/>
+	<div>
+	  <input name="submit" value="Bidali" type="submit" style="width:75px;height:30px;font-size:20px;"/>
+	</div>
+	
+</form>
+</body>
+</html>

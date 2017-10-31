@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>My Atom Example</title>
+<link href="http://enekosLibraryAtom.com"/>
+<updated>12/05/2016</updated>
+<author>
+<name>Eneko Garcia</name>
+</author>
+<id></id>
+<entry>
+<title>First New</title>
+<link href="http://enekosLibrary.com/new1"/>
+<id>n1eg3005</id>
+<updated>30/05/2017</updated>
+<summary>Offers</summary>
+<description>This week we have new offers to you</description>
+</entry>
+<entry>
+<title>Second New</title>
+<link href="http://enekosLibrary.com/new2"/>
+<id>n2eg2505</id>
+<updated>25/05/2016</updated>
+<summary>Updates</summary>
+<description>We update books and fimls</description>
+</entry>
+
+</feed>

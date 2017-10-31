@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Markup languagues 2017-2018</title>
+            <link href="styles/styles.css" type="text/css" rel=stylesheet>
+            <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <script src="js/jquery-3.1.1.min.js"></script>
+            <script>
+              $(document).ready(function(){
+                  $("#signup").click(function(){
+                      $(".tosign").slideToggle();
+                  });
+              });
+                   $(document).ready(function(){
+                           $("#lin").click(function(){
+                          $(location).attr("href","index.html")
+                      });
+                   });
+                  $(document).ready(function(){
+                           $("#admin").click(function(){
+                          $(location).attr("href","adminhome.html")
+                      });
+                   });
+                       
+              
+              
+              
+              </script>
+
+              <script>
+                $(document).ready(function(){
+                  $('#nireforma').validate({
+                    rules: {
+                      email: {
+                        required: true,
+                        email:true
+                        },
+                      password: {
+                        required: true,
+                        rangelength:[8,16]  //luzeera 8 eta 16 karaktere bitartean
+                        },
+                      password2: {equalTo:'#password'}
+                      
+                      },     //rules-en bukaera
+                    messages: {
+                      email: {
+                        required: "Idatzi emaila mesedez.",
+                        email: "Hau ez da email helbidea."
+                        },
+                      password:{
+                        required: 'Mesedez idatzi password-a',
+                        rangelength:'Passwordak 8 eta 16 karaktere artean izan behar du.'
+                        },
+                      password2: {
+                        equalTo: 'not the same.'
+                        }
+                    },  //mezu bukaera
+                    
+                  });
+                });
+                
+                </script>
+            <style>
+            
+            #lehena{
+              align-content: center;
+              margin-right: 600px;
+              margin-left: 600px;
+            }
+            </style>
+                
+    </head>
+    <body>
+      <h1 style="text-align: center">FILM RENTAL</h1>
+      <div style="text-align: center" id=lehena>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Home</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="offers.html">Offers</a></li>
+                  <li><a href="others.html">Others</a></li>
+                  
+                  <li><a href="contac.html">Contac us</a></li>
+                    <li><a href="login.html">login/sign up</a></li>
+                    <li><a href="profile.html">profile</a></li>
+                    
+                    
+                    
+                     
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+          </div>
+          <center>
+            <div class="row">
+   <div class="twelve columns">
+       
+                </div>
+           </div>
+       <div class=tosign style="display: none" class="tosign">  
+       <fieldset>
+           <legend>Sign Up</legend>
+           
+           <form method="post" action="index.html" class="nireforma">
+               <table>
+               <tr>
+                   <td>name</td>
+                   <td><input type="text" placeholder="must be 2 letters at least" id="name" name="name"></td>
+                   </tr><tr>
+                    <td>surname</td>
+                   <td><input type="text" placeholder="must be 4 letters at least" id="surname" name="surname"></td>
+                   </tr><tr>
+                   <td>user</td>
+                   <td><input type="text" placeholder="must be 2 letters at least" id="username" name="username"></td>
+                   </tr><tr>
+                    <td>password</td>
+                   <td><input type="password" placeholder="must be 8 letters at least" id="password" name="password"></td>
+                   </tr>
+                   <tr>
+                    <td>password2</td>
+                   <td><input type="password" placeholder="must be 8 letters at least" name="password2" id="password2"></td>
+                   </tr>
+                   <tr>
+                       <td>email</td>
+                       <td><input type="email" placeholder="account@server.ext" name="email" id="email"></td>
+                   </tr>
+                   
+                   <tr>
+                   <td>Gender:</td>
+                       <td>
+                       male <input type="radio" name="gender" value="male" >
+                       female <input type="radio" name="gender" value="female">
+                       
+                       
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>Age</td>
+                       <td><input type="number" min="18" max="99" name="age" placeholder="Insert yout age"></td>
+                   </tr>
+                   
+                   
+                   
+                   <tr>
+                       <td>credit card</td>
+                       <td><input type="number" placeholder="Inser you credit card number" name="creditcard" id="creditcard"></td>
+                   
+                   </tr>
+                   
+                   
+                   <tr>
+                       <td> <input type="submit" value="send" name="send"></td>
+                       <td> <input type="reset" value="reset" name="reset"></td>
+                   </tr>
+                   
+                   
+                   
+               </table>
+           
+           
+           </form>         
+       
+       </fieldset>
+                </div>
+       <div class=tosign>
+       <form method="post" action="index.html" class="nireforma">
+            <h1>login</h1>  
+         <table border="1px solid black">  
+             <tr>
+                   <td>user</td>
+                   <td><input type="text" name="username" placeholder="must be 2 letters at least" id="username"></td>
+                   </tr>
+           <tr>
+                    <td>password</td>
+                   <td><input type="password" name="password" placeholder="must be 8 letters at least" id="password"></td>
+                   
+           </tr>
+             <tr><td><input type="button" name="login" value="login" id="lin"></td>
+             <td><input type="button" name="sign" value="sign up" id="signup"></td>
+             </tr>
+             </table>
+           
+           
+       
+           </form> 
+           </div>
+           </center>
+    </body>
+</html>

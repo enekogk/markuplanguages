@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <h1 style="text-align: center">IE LIBRARY</h1>
+            
+            
+            
+            <script src="js/jquery-3.1.1.min.js"></script>
+            <script src="js/myrules.js"></script>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                     $("#lin").click(function(){
+                    $(location).attr("href","index.html")
+                });
+                
+                    $(document).ready(function(){
+                     $("#sign").click(function(){
+                    $(location).attr("href","signup.html")
+                });
+                    
+            });
+                    $(document).ready(function(){
+                     $("#admin").click(function(){
+                    $(location).attr("href","adminhome.html")
+                });
+                });
+                });
+                
+</script>
+            <style>
+                html{
+                    background-color: aquamarine;
+                }
+                body{
+                    text-align: center;
+                }
+                table{
+                    margin-left: 550px;
+                }
+            </style>
+    
+    
+        </head>
+
+        <body>
+            <div class="row">
+		<div class="twelve columns">
+    <h3>Welcome to our online library. Here you can bought books, Magazines and DVDs</h3>
+    <h3>First, you have to login and you will be redirect to the principal web page</h3>
+    <h3>If you dont have a account, you can sign up </h3>
+            </div>
+            </div>
+            <form method="post" action="firstsignup.html" id="nireforma">
+               
+          <table border="1px solid black">  
+              <tr>
+                    <td>user</td>
+                    <td><input type="text" name="username" placeholder="must be 2 letters at least" id="username"></td>
+                    </tr>
+            <tr>
+                     <td>password</td>
+                    <td><input type="text" name="password" placeholder="must be 8 letters at least" id="password"></td>
+                    
+            </tr>
+              <tr><td><input type="button" name="login" value="login" id="lin"></td>
+              <td><input type="button" name="sign" value="sign up" id="sign"></td>
+              </tr>
+              </table>
+            
+            
+        <h3>Login only for admin</h3>
+                <table border="1px solid black">
+            <tr>
+                    <td>user</td>
+                    <td><input type="text" name="username" placeholder="must be 2 letters at least" id="username"></td>
+                    </tr>
+            <tr>
+                     <td>password</td>
+                    <td><input type="text" name="password" placeholder="must be 8 letters at least" id="password"></td>
+                    
+            </tr>
+            <tr><td><input type="button" name="login" value="login" id="admin"></td></tr>
+                    </table>
+                    
+            </form>  
+        </body>
+</html>

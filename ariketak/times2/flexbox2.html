@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <style>
+    body {
+        font: 24px Helvetica;
+        background: white;
+    }
+
+    #main {
+        min-height: 300px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-flow: row;
+    }
+ 
+    #main > article {
+         min-height: 300px;
+        margin: 4px;
+        padding: 5px;
+        border: 1px solid white;
+        border-radius: 7pt;
+        background: white;
+        flex: 3 1 60%;
+        order: 2;
+    }
+
+    #main > nav {
+         min-height: 300px;
+        margin: 4px;
+        padding: 5px;
+        border: 1px solid white;
+        border-radius: 7pt;
+        background: white;
+        flex: 1 6 20%;
+        order: 1;
+    }
+  
+    #main > aside {
+         min-height: 300px;
+        margin: 4px;
+        padding: 5px;
+        border: 1px solid white;
+        border-radius: 7pt;
+        background: white;
+        flex: 1 6 20%;
+        order: 3;
+    }
+ 
+    header, footer {
+        display: block;
+        margin: 4px;
+        padding: 5px;
+        min-height: 50px;
+        border: 1px solid white;
+        border-radius: 7pt;
+        background: white;
+    }
+ 
+    /* Too narrow to support three columns */
+    @media all and (max-width: 640px) {
+        #main, #page {
+            flex-direction: column;
+        }
+
+        #main > article, #main > nav, #main > aside {
+        /* Return them to document order */
+            order: 0;
+        }
+  
+        #main > nav, #main > aside, header, footer {
+            min-height: 10px;
+            max-height: 1000px;
+        }
+    }
+        .marra{
+    border-bottom: 2px solid grey;
+    width: 100%
+}
+    </style>
+  </head>
+  <body>
+    <header><img src="logo.png" style="width: 50%; margin-left: 25%"></header>
+    <div id='main'>
+      <article>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active" style="float: left;margin-left: 15%; "></li>
+            <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="2" class="active" style="float: right; margin-right: 15%;"></li>
+            
+          </ol>
+          
+            
+        
+      
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="1.PNG" alt="Chania" class="karrusel">
+          </div>
+      
+          <div class="item">
+            <img src="2.PNG" alt="Chania" class="karrusel">
+          </div>
+      
+          <div class="item">
+            <img src="3.PNG" alt="Flower" class="karrusel">
+          </div>
+          
+          
+      
+        
+        </div>
+      
+        
+        
+              
+      </div>
+        </article>
+      <nav>
+        <div class="notizia" style="float: left; margin-right:5%">
+        <table>
+                <tr>
+                    <td>
+                          <img src="raqqa.jpg" style="width: 80%; height: 80%; float: left" class="irudiak">
+                    </td>
+                    <td>
+                        <p class="notizia2"><span style="font-weight:bold">Raqqa's relief</span><br>
+                        after four years of <br>terror beset Syrian <br>city celebrates freedom
+                        </p>
+                    </td>
+                </tr>
+                  
+                  
+            </table>
+    
+  </div>
+          
+          <div class="notizia" style="float: left; margin-right:5%">
+              <div class="marra"></div>
+        <table>
+                <tr>
+                    <td>
+                          <img src="tuition.jpg" style="width: 80%; height: 80%; float: left" class="irudiak">
+                    </td>
+                    <td>
+                        <p class="notizia2"><span style="font-weight:bold">Tuition Fees</span><br>
+                            Unibersities<br>minister was kept in<br> the dark about...
+                            </p>
+                    </td>
+                </tr>
+                  
+                  
+            </table>
+  </div>
+        </nav>
+      <aside>
+        <div class="notizia" style="float: left; margin-right:5%">
+        <table>
+                <tr>
+                    <td>
+                          <img src="water.jpg" style="width: 80%; height: 80%; float: left" class="irudiak">
+                    </td>
+                    <td>
+                        <p class="notizia2"><span style="font-weight:bold">Water palaver</span><br>
+                            Conpmacent <br> companies are ripe <br> for renationalisation...
+                            </p>
+                    </td>
+                </tr>
+                  
+                  
+            </table>
+  </div>
+          
+          <div class="notizia" style="float: left; margin-right:5%">
+              <div class="marra"></div>
+        <table>
+                <tr>
+                    <td>
+                          <img src="living.jpg" style="width: 80%; height: 80%; float: left" class="irudiak">
+                    </td>
+                    <td>
+                        <p class="notizia2"><span style="font-weight:bold">Living with giants</span><br>
+                            after four years of <br>terror beset Syrian <br>city celebrates freedom
+                            </p>
+                    </td>
+                </tr>
+                  
+                  
+            </table>
+  </div>
+        </aside>
+    </div>
+    <footer style="text-align: center">Copyright &copy; Eneko Garcia</footer>
+  </body>
+</html>

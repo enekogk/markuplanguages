@@ -1,0 +1,10 @@
+
+
+hamburger menu
+
+validatua egon behar du eta horizontal scroll bar-a ez da egon behar
+
+
+responsive
+
+3. deadline

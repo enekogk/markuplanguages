@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1 style="text-align: center">IE LIBRARY</h1>
+        <link href="styles/styles.css" type="text/css" rel=stylesheet>
+        
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/myrules.js"></script>
+        <script>
+        $(document).ready(function(){
+            $("#tochange").click(function(){
+                $(".aldatzeko").slideToggle();
+            });
+        });
+            $(document).ready(function(){
+                     $("#bidali").click(function(){
+                    $(location).attr("href","index.html")
+                });
+             });
+        </script>
+        <script>
+$(document).ready(function(){
+	$('#signup').validate({
+		rules: {
+			password0: {
+				required: true,
+				rangelength:[8,16]  //luzeera 8 eta 16 karaktere bitartean
+				},
+			password: {
+				required: true,
+				rangelength:[8,16]  //luzeera 8 eta 16 karaktere bitartean
+				},
+			password2: {equalTo:'#password'}
+			
+			},     //rules-en bukaera
+		messages: {
+			
+        
+			pasahitza:{
+				required: 'Your new password',
+				rangelength:'8-16'
+				},
+			berretsi_pasahitza: {
+				equalTo: 'It is not the equal'
+				}
+		},  //mezu bukaera
+		
+	});
+});
+
+</script>
+        
+    </head>
+    
+    <body>
+        
+     <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">home</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="offers.html">offers</a></li>
+        <li><a href="others.html">Others</a></li>
+        
+        <li><a href="contac.html">Contac us</a></li>
+          <li><a href="login.html">login/sign up</a></li>
+          <li><a href="profile.html">profile</a></li>
+          <li><a href="adminhome.html">Admin Home</a></li>
+          <li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+          <a href="atom.xml">
+            <img height="50px" width="50px" src="images/atom.png"/>
+        </a>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+      
+        <center>
+        <h2 style="text-align: center">PERSONAL PROFILE</h2>
+        <div class=aldatzeko style="display: none">
+        <h4>Change password. Works for users and for admins</h4>
+        <form method="post" action="" id="signup">
+        <table>
+           <tr>
+                    <td>Old Password</td>
+                
+                    <td><input name="password" placeholder="must be 8 letters at least" id="password0" type="password"></td>
+                  </tr><tr>
+                    <td>New Password</td>
+                
+                    <td><input name="password" placeholder="must be 8 letters at least" id="password" type="password"></td>
+            </tr><tr>
+                 <td>Repeat New Password</td>
+                
+                    <td><input name="password" placeholder="must be 8 letters at least" id="password2" type="password"></td>
+                  
+                    </tr>
+           <tr><td><input type="button" value="login" id="bidali"></td></tr>
+            </table>
+        
+        </form>
+    </div>
+            </center>
+        <div class="aldatzeko">
+            <center>
+            <table>
+            <tr><td><b>Your name:</b></td></tr>
+            <tr><td><b>Your surname</b></td></tr>
+            <tr><td><b>User name</b></td></tr>
+            <tr><td><b>Genre:</b></td></tr>
+        
+        
+        </table>
+        
+        
+        <table border="1px solid black">
+            <tr><td><p>If you want to change your password, click in the button</p></td></tr>
+        </table>
+        <tr><td><input type="button" value="pass" id="tochange"></td></tr>
+            </center>
+        </div>
+    </body>
+    <footer style="text-align: center">Ismael Touceda and Eneko Garcia &copy; 2017</footer>
+</html>
