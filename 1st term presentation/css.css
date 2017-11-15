@@ -13,7 +13,7 @@ body {
 #main > article {
     margin: 4px;
     padding: 5px;
-    border: 1px solid white;
+    border: 1px solid black;
     border-radius: 7pt;
     background: white;
     flex: 2 1 60%;
@@ -24,7 +24,7 @@ body {
 #main > nav {
     margin: 4px;
     padding: 5px;
-    border: 1px solid white;
+    border: 1px solid black;
     border-radius: 7pt;
     background: white;
     flex: 1 6 4%;
@@ -37,7 +37,7 @@ body {
 #main > aside{
     margin: 4px;
     padding: 5px;
-    border: 1px solid white;
+    border: 1px solid black;
     border-radius: 7pt;
     background: white;
     flex: 1 6 4%;
