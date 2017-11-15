@@ -13,9 +13,9 @@ body {
 #main > article {
     margin: 4px;
     padding: 5px;
-    border: 1px solid #8ACC33;
+    border: 1px solid white;
     border-radius: 7pt;
-    background: #dddd88;
+    background: white;
     flex: 2 1 60%;
     order: 2;
     
@@ -24,9 +24,9 @@ body {
 #main > nav {
     margin: 4px;
     padding: 5px;
-    border: 1px solid #8888bb;
+    border: 1px solid white;
     border-radius: 7pt;
-    background: #ccccff;
+    background: white;
     flex: 1 6 4%;
     order: 1;
     height: 25%;
@@ -37,9 +37,9 @@ body {
 #main > aside{
     margin: 4px;
     padding: 5px;
-    border: 1px solid #8888bb;
+    border: 1px solid white;
     border-radius: 7pt;
-    background: #ccccff;
+    background: white;
     flex: 1 6 4%;
     order: 3;
     height: 60%;
@@ -98,4 +98,11 @@ header{
     #logo{
         width: 30%;
         margin-left: 30%;
+    }
+    #bideo{
+        width: 60%;
+        margin-left: 20%;
+    }
+    .texto{
+        text-align: center;
     }
