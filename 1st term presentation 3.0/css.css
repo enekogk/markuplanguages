@@ -1,0 +1,130 @@
+body {
+    font: 24px Helvetica;
+    background-color: #C8FCC2;
+}
+
+#main {
+    min-height: 800px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row;
+}
+
+#main > article {
+    margin: 4px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 7pt;
+    background: #A6FD93;
+    flex: 2 1 60%;
+    order: 2;
+    
+}
+
+#main > nav {
+    margin: 4px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 7pt;
+    background: #A6FD93;
+    flex: 1 6 4%;
+    order: 1;
+    height: 25%;
+    float: left;
+    
+    
+}
+#main > aside{
+    margin: 4px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 7pt;
+    background: #A6FD93;
+    flex: 1 6 4%;
+    order: 3;
+    height: 40%;
+    float: left;
+    /*margin-bottom: -300px;*/
+    
+
+}
+
+
+
+footer {
+    display: block;
+    margin: 4px;
+    padding: 5px;
+    min-height: 50px;
+    text-align: center;
+    
+}
+header{
+    display: flex;
+    margin: 4px;
+    padding: 5px;
+    min-height: 100px;
+
+    
+    
+}
+
+
+
+/* Too narrow to support three columns */
+@media all and (max-width: 640px) {
+    #main, #page {
+        flex-direction: column;
+    }
+
+    #main > article, #main > nav, #main > {
+    /* Return them to document order */
+        order: 0;
+        
+    }
+
+    #main > header, footer {
+        min-height: 300px;
+        max-height: 500px;
+        
+    }
+    footer{
+        order: 6;
+    }
+    #main > nav {
+        min-height: 400px;
+        max-height: 1000px;
+        
+    }
+    #main > aside{
+        min-height: 400px;
+        max-height: 1000px;
+    }
+    #main > article{
+        min-height: 200px;
+        max-height: 2000px;
+    }
+    
+        
+    }
+
+    #logo{
+        width: 30%;
+        margin-left: 30%;
+    }
+    #bideo{
+        width: 60%;
+        margin-left: 20%;
+    }
+    .texto{
+        text-align: center;
+    }
+.karrusel{
+    width: 90%;
+    margin-left: 5%;
+}
+#irudia{
+    width: 60%;
+    margin-left: 20%;
+    }
