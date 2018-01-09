@@ -66,26 +66,26 @@
         // init
         document.getElementById("elementID2").style.left = "100px";
         document.getElementById("elementID2").style.top = "100px";        
-        var x = 50;
-        var y = 50;
-        var dx = 20;
-        var dy = 20;
+        var a = 50;
+        var b = 50;
+        var da = 20;
+        var db = 20;
         document.addEventListener('keydown', function(event) {
             console.log(event.keyCode);
             if (event.keyCode == 68) { // -> key
-                x = x + dx;
+                a = a + da;
             }
             if (event.keyCode == 65) { // <- key
-                x = x - dx;
+                a = a - da;
             } 
             if (event.keyCode == 83) { // top key
-                y = y + dy;
+                b = b + db;
             }
             if (event.keyCode == 87) { // down key
-                y = y - dy;
+                b = b - db;
             } 
-            document.getElementById("elementID2").style.left = x + 'px';
-            document.getElementById("elementID2").style.top = y + 'px';                                
+            document.getElementById("elementID2").style.left = a + 'px';
+            document.getElementById("elementID2").style.top = b + 'px';                                
         });
     </script>
 
