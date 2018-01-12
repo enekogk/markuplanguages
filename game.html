@@ -14,32 +14,57 @@
             background-color: red;
             border-style: solid;
             position: absolute;
+            left: 400px;
+            top: 400px;
+            width: 70px;
+            height: 70px;
+             
+                    
+        }
+        /*
+        .element2  {
+            background-color: yellowgreen;
+            border-style: solid;
+            position: absolute;
             left: 100px;
             top: 150px;
-            width: 100px;
-            height: 100px;          
+            width: 70px;
+            height: 70px; 
+                    
         }
-        .element2  {
+        */
+        .element3  {
             background-color: blue;
             border-style: solid;
             position: absolute;
-            left: 200px;
-            top: 250px;
-            width: 100px;
-            height: 100px;          
-        };
+            width: 70px;
+            height: 70px; 
+            border-radius: 50px;         
+        }
+        #kaxa{
+            border-style: solid;
+            color: black;
+            width: 800px;
+            height: 800px;
+        }
+      
     </style>
-
+<div id="kaxa">
     <div id="elementID" class="element"></div>
     <div id="elementID2" class="element2"></div>
+    <div id="elementID3" class="element3"></div>
+    <button onclick="myMove()">Click Me</button>
+</div>
 
+
+   
     <script>
         console.log("hi");
         // init
-        document.getElementById("elementID").style.left = "50px";
-        document.getElementById("elementID").style.top = "50px";        
-        var x = 50;
-        var y = 50;
+        document.getElementById("elementID").style.left = "400px";
+        document.getElementById("elementID").style.top = "400px";        
+        var x = 400;
+        var y = 400;
         var dx = 20;
         var dy = 20;
         document.addEventListener('keydown', function(event) {
@@ -59,14 +84,27 @@
             document.getElementById("elementID").style.left = x + 'px';
             document.getElementById("elementID").style.top = y + 'px';                                
         });
-    </script>
-    <script>
-
+        function myMove() {
+  var elem = document.getElementById("elementID3");   
+  var pos = 0;
+  var id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 730) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.top = pos + 'px'; 
+      elem.style.left = pos + 'px'; 
+    }
+  }
+}
+    
+/*
         console.log("bye");
         // init
-        document.getElementById("elementID2").style.left = "100px";
-        document.getElementById("elementID2").style.top = "100px";        
-        var a = 50;
+        document.getElementById("elementID2").style.left = "140px";
+        document.getElementById("elementID2").style.top = "50px";        
+        var a = 140;
         var b = 50;
         var da = 20;
         var db = 20;
@@ -87,7 +125,12 @@
             document.getElementById("elementID2").style.left = a + 'px';
             document.getElementById("elementID2").style.top = b + 'px';                                
         });
-    </script>
+        function move(){
+            
+        }
+        */
+        
+         </script>
 
 </body>
 </html>
