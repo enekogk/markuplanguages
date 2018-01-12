@@ -91,7 +91,9 @@
  
   function frame() {
     if (pos == 730) {
-      clearInterval(id);
+      pos--;
+      elem.style.top = pos - 'px'; 
+      elem.style.left = pos - 'px';
     } else {
       pos++; 
       elem.style.top = pos + 'px'; 
