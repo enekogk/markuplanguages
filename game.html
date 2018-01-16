@@ -15,24 +15,25 @@
             border-style: solid;
             position: absolute;
             left: 400px;
-            top: 800px;
+            top: 770px;
             width: 80px;
             height: 10px;
              
                     
         }
-        /*
+        
         .element2  {
             background-color: yellowgreen;
             border-style: solid;
             position: absolute;
-            left: 100px;
-            top: 150px;
-            width: 70px;
-            height: 70px; 
+            left: 425px;
+            top: 750px;
+            width: 20px;
+            height: 40px; 
+            border-radius: 30px;
                     
         }
-        */
+        
       /*  .element3  {
             background-color: blue;
             border-style: solid;
@@ -77,16 +78,40 @@
             if (event.keyCode == 37) { // <- key
                 x = x - dx;
             } 
-            if (event.keyCode == 32){
-                
-            }
+            
             
             document.getElementById("elementID").style.left = x + 'px';
             document.getElementById("elementID").style.top = y + 'px';                                
         });
+        </script>
+
+        <script>
+        console.log("hi");
+        // init
+        document.getElementById("elementID2").style.left = "425px";
+        document.getElementById("elementID2").style.top = "750px";        
+        var a = 425;
+        var b = 750;
+        var da = 20;
+        var db = 20;
+        
+        document.addEventListener('keydown', function(event) {
+            console.log(event.keyCode);
+            if (event.keyCode == 39) { // -> key
+                a = a + da;
+            }
+            if (event.keyCode == 37) { // <- key
+                a = a - da;
+            } 
+           
+            
+            document.getElementById("elementID2").style.left = x + 'px';
+            document.getElementById("elementID2").style.top = y + 'px';                                
+        });
+        </script>
         
     
-/*
+    <!--
         console.log("bye");
         // init
         document.getElementById("elementID2").style.left = "140px";
@@ -115,9 +140,9 @@
         function move(){
             
         }
-        */
+    -->
         
-         </script>
+         
 
 </body>
 </html>
