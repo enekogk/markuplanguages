@@ -15,7 +15,7 @@
             border-style: solid;
             position: absolute;
             left: 400px;
-            top: 770px;
+            top: 10px;
             width: 80px;
             height: 10px;
              
@@ -27,7 +27,7 @@
             border-style: solid;
             position: absolute;
             left: 430px;
-            top: 730px;
+            top: 30px;
             width: 15px;
             height: 30px; 
             border-radius: 30px;
@@ -79,7 +79,18 @@
                 x = x - dx;
             } 
             if (event.keyCode == 32) { // space-bar key
-                
+                var elem = document.getElementById("elementID2");   
+  var pos = 30;
+  var id = setInterval(frame, 1);
+  function frame() {
+    if (pos == 780) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.top = pos + 'px'; 
+       
+    }
+  }
        
     
             } 
@@ -90,18 +101,7 @@
                                         
         });
 
-  var elem = document.getElementById("elementID2");   
-  var pos = 750;
-  var id = setInterval(frame, 5);
-  function frame() {
-    if (pos == 0) {
-      clearInterval(id);
-    } else {
-      pos--; 
-      elem.style.top = pos - 'px'; 
-       
-    }
-  }
+
         </script>
 
         
