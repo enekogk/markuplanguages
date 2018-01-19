@@ -85,9 +85,11 @@
   function frame() {
     if (pos == 780) {
       clearInterval(id);
+      pos = 30;
+      elem.style.top = pos + 'px'; 
     } else {
     // pos++;
-        pos = pos + 10;
+      pos = pos + 10;
       elem.style.top = pos + 'px'; 
        
     }
