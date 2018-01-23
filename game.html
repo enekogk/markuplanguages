@@ -94,10 +94,22 @@
        
     }
   }
-       
-    
-            } 
-            
+       } 
+       // empieza la colision
+        var hy = {posx: x, posy: y, width: 40, height: 40}
+        var wx = {posa: a, posb: b, width: 40, height: 40}
+        
+        if (hy.posx < (wx.posa + wx.width)+20 &&
+         (hy.posx + hy.width)+ 20 > wx.posa &&
+         hy.posy < (wx.posb + wx.height)+20 &&
+         (hy.height + hy.posy)+20 > wx.posb) {
+          // collision detected!
+          console.log("collision")
+          redraw();
+          
+        };
+        
+           //termina la colision 
             
             document.getElementById("elementID").style.left = x + 'px';
             document.getElementById("elementID2").style.left = x + 40 + 'px';
