@@ -34,15 +34,17 @@
                     
         }
         
-      /*  .element3  {
+        .element3  {
             background-color: blue;
             border-style: solid;
             position: absolute;
             width: 70px;
             height: 70px; 
-            border-radius: 50px;         
+              
+            left: 400px;
+            top: 400px;       
         }
-        */
+        
         #kaxa{
             border-style: solid;
             color: black;
@@ -68,6 +70,10 @@
                
         var x = 400;
         var dx = 20;
+        var y = 10;
+        var a = 400;
+        var b = 400; 
+      
         
         
         document.addEventListener('keydown', function(event) {
@@ -95,14 +101,17 @@
     }
   }
        } 
+       document.getElementById("elementID").style.left = x + 'px';
+            document.getElementById("elementID2").style.left = x + 40 + 'px';
+            document.getElementById("elementID2").style.top = pos  + 'px';
        // empieza la colision
-        var hy = {posx: x, posy: y, width: 40, height: 40}
-        var wx = {posa: a, posb: b, width: 40, height: 40}
+        var hy = {posx: x, posy: pos, width: 15, height: 30}
+        var wx = {a: 400, b: 400, width: 70, height: 70}
         
-        if (hy.posx < (wx.posa + wx.width)+20 &&
-         (hy.posx + hy.width)+ 20 > wx.posa &&
-         hy.posy < (wx.posb + wx.height)+20 &&
-         (hy.height + hy.posy)+20 > wx.posb) {
+        if (hy.posx < (wx.a + wx.width)+35 &&
+         (hy.posx + hy.width)+ 7.5 > wx.a &&
+         hy.posy < (wx.b + wx.height)+35 &&
+         (hy.height + hy.posy)+15 > wx.b) {
           // collision detected!
           console.log("collision")
           redraw();
@@ -110,9 +119,8 @@
         };
         
            //termina la colision 
+             
             
-            document.getElementById("elementID").style.left = x + 'px';
-            document.getElementById("elementID2").style.left = x + 40 + 'px';
                                         
         });
         </script>
