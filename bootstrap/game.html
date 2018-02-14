@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>  
+</head>
+
+<body>
+    
+
+    <style>
+        .element  {
+            background-color: red;
+            border-style: solid;
+            position: absolute;
+            left: 400px;
+            top: 10px;
+            width: 80px;
+            height: 10px;
+             
+                    
+        }
+        
+        .element2  {
+            background-color: yellowgreen;
+            border-style: solid;
+            position: absolute;
+            left: 430px;
+            top: 30px;
+            width: 15px;
+            height: 30px; 
+            border-radius: 30px;
+                    
+        }
+        
+      /*  .element3  {
+            background-color: blue;
+            border-style: solid;
+            position: absolute;
+            width: 70px;
+            height: 70px; 
+            border-radius: 50px;         
+        }
+        */
+        #kaxa{
+            border-style: solid;
+            color: black;
+            width: 800px;
+            height: 800px;
+        }
+        .element4{
+            position: absolute;
+            
+            top: 750px;
+            left: 200px;
+        }
+        .element5{
+            position: absolute;
+           
+            top: 750px;
+            left: 290px;
+        }
+        .element6{
+            position: absolute;
+            
+            top: 750px;
+            left: 380px;
+        }
+        .element7{
+            position: absolute;
+          
+            top: 750px;
+            left: 470px;
+        }
+        .element8{
+            position: absolute;
+            
+            top: 750px;
+            left: 560px;
+        }
+        .element9{
+            position: absolute;
+            
+            top: 750px;
+            left: 650px;
+        }
+        .element10{
+            position: absolute;
+            
+            top: 780px;
+            left: 200px;
+        }
+        .element11{
+            position: absolute;
+            
+            top: 780px;
+            left: 290px;
+        }
+        .element12{
+            position: absolute;
+            
+            top: 780px;
+            left: 380px;
+        }
+        .element13{
+            position: absolute;
+           
+            top: 780px;
+            left: 470px;
+        }
+        .element14{
+            position: absolute;
+            
+            top: 780px;
+            left: 560px;
+        }
+        .element15{
+            position: absolute;
+            
+            top: 780px;
+            left: 650px;
+        }
+        .element16{
+            position: absolute;
+            
+            top: 750px;
+            left: 110px;
+        }
+        .element17{
+            position: absolute;
+           
+            top: 780px;
+            left: 110px;
+        }
+        .elementx{
+            background-color: black;
+            width: 80px;
+            height: 20px;
+        }
+        
+
+      
+    </style>
+<div id="kaxa">
+    <div id="elementID" class="element"></div>
+    <div id="elementID2" class="element2"></div>
+    <div id="elementID3" class="element3"></div>
+    <div id="elementID4" class="element4 elementx"></div>
+    <div id="elementID5" class="element5 elementx"></div>
+    <div id="elementID6" class="element6 elementx"></div>
+    <div id="elementID7" class="element7 elementx"></div>
+    <div id="elementID8" class="element8 elementx"></div>
+    <div id="elementID9" class="element9 elementx"></div>
+    <div id="elementID10" class="element10 elementx"></div>
+    <div id="elementID11" class="element11 elementx"></div>
+    <div id="elementID12" class="element12 elementx"></div>
+    <div id="elementID13" class="element13 elementx"></div>
+    <div id="elementID14" class="element14 elementx"></div>
+    <div id="elementID15" class="element15 elementx"></div>
+    <div id="elementID16" class="element16 elementx"></div>
+    <div id="elementID17" class="element17 elementx"></div>
+    
+    
+</div>
+
+
+   
+    <script>
+        console.log("hi");
+        // init
+        document.getElementById("elementID").style.left = "400px";
+        document.getElementById("elementID2").style.left = "430px";
+        
+        var x = 400;
+        var dx = 20;
+        
+        
+        document.addEventListener('keydown', function(event) {
+            console.log(event.keyCode);
+            if (event.keyCode == 39) { // -> key
+                x = x + dx;
+            }
+            if (event.keyCode == 37) { // <- key
+                x = x - dx;
+            } 
+            if (event.keyCode == 32) { // space-bar key
+                var elem = document.getElementById("elementID2");   
+  var pos = 30;
+  var pos2 = 30;
+  var id = setInterval(frame, 1);
+  function frame() {
+    if (pos == 780) {
+      clearInterval(id);
+      pos = 30;
+      elem.style.top = pos + 'px'; 
+    } else {
+    // pos++;
+      pos = pos + 5;
+      elem.style.top = pos + 'px'; 
+       
+    }
+  }
+  var allbricks = document.querySelectorAll(".elementx");
+  allbricks.forEach(function(elementua) {
+      colision(elementua);
+  }, this);
+
+
+  function colision(elementua){
+      if (elementua.offsettop == pos && elementua.offsetleft == pos2){
+        elementua.style.visibility = "hidden"
+      }
+      
+    
+  }
+       
+    
+            } 
+            
+            
+            
+            document.getElementById("elementID").style.left = x + 'px';
+            document.getElementById("elementID2").style.left = x + 40 + 'px';
+                                        
+        });
+        </script>
+
+        
+        
+    
+    <!--
+        console.log("bye");
+        // init
+        document.getElementById("elementID2").style.left = "140px";
+        document.getElementById("elementID2").style.top = "50px";        
+        var a = 140;
+        var b = 50;
+        var da = 20;
+        var db = 20;
+        document.addEventListener('keydown', function(event) {
+            console.log(event.keyCode);
+            if (event.keyCode == 68) { // -> key
+                a = a + da;
+            }
+            if (event.keyCode == 65) { // <- key
+                a = a - da;
+            } 
+            if (event.keyCode == 83) { // top key
+                b = b + db;
+            }
+            if (event.keyCode == 87) { // down key
+                b = b - db;
+            } 
+            document.getElementById("elementID2").style.left = a + 'px';
+            document.getElementById("elementID2").style.top = b + 'px';                                
+        });
+        function move(){
+            
+        }
+    -->
+        
+         
+
+</body>
+</html>
