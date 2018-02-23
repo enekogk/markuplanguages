@@ -188,17 +188,17 @@
         document.getElementById("elementID").style.left = "400px";
         document.getElementById("elementID2").style.left = "430px";
         
-        var x = 400;
-        var dx = 20;
+        var a = 400;
+        var da = 20;
         
         
         document.addEventListener('keydown', function(event) {
             console.log(event.keyCode);
             if (event.keyCode == 39) { // -> key
-                x = x + dx;
+                x = a + da;
             }
             if (event.keyCode == 37) { // <- key
-                x = x - dx;
+                x = a - da;
             } 
             if (event.keyCode == 32) { // space-bar key
                 var elem = document.getElementById("elementID2");   
@@ -215,25 +215,44 @@
                         pos = pos + 5;
                         elem.style.top = pos + 'px'; 
                     }
+
+
                     var allbricks = document.querySelectorAll(".elementx");
                     allbricks.forEach(function(elementua) {
-                        colision(elementua, elem);
-                    }, this);                    
+
+                            if (elementua.style.visibility == "visible"){
+                                var rect1 = {x: a, y:  document.getElementById("elementID2").offsetTop, width: elementua.offsetWidth, height: elementua.offsetHeight}
+                                var rect2 = {x: elementua.offsetLeft, y: elementua.offsetTop, width: elementua.offsetWidth, height: elementua.offsetHeight}
+                            if (rect1.x < rect2.x + rect2.width &&
+                            rect1.x + rect1.width > rect2.x &&
+                            rect1.y < rect2.y + rect2.height &&
+                            rect1.height + rect1.y > rect2.y) {
+                                // collision detected!
+                                console.log("talka!!");
+                                // https://www.sitepoint.com/five-ways-to-hide-elements-in-css/
+                                element.style.visibility = "hidden";
+                                }
+                            }
+                })
                 }
             }
-            document.getElementById("elementID").style.left = x + 'px';
-            document.getElementById("elementID2").style.left = x + 40 + 'px';            
         });
-        function colision(elementua, bullet){
-            if (elementua.offsetTop <= bullet.offsetTop && 
-                    (elementua.offsetLeft <= bullet.offsetLeft) && 
-                    ((elementua.offsetLeft + elementua.width) <= bullet.offsetLeft)) {
-                elementua.style.visibility = "hidden";
-            }
-        }
+        
+        
+                       // colision(elementua, elem);
+                                    
+
+                                       
+                
+            
+            document.getElementById("elementID").style.left = a + 'px';
+            document.getElementById("elementID2").style.left = a + 40 + 'px';            
+        
+
         function berrabiarazi(){
-                    window.location.href = "game.html";
+                    window.location.href = "game.html"
         }
+    
     </script>
 
         
