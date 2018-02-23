@@ -142,7 +142,6 @@
         
         
         
-
       
     </style>
     <style>
@@ -158,7 +157,6 @@
     margin: 4px 2px;
     cursor: pointer;
 }
-
     </style>
 <div id="kaxa">
     <div id="elementID" class="element"></div>
@@ -204,48 +202,39 @@
             } 
             if (event.keyCode == 32) { // space-bar key
                 var elem = document.getElementById("elementID2");   
-  var pos = 30;
-  var pos2 = 30;
-  var id = setInterval(frame, 1);
-  function frame() {
-    if (pos == 780) {
-      clearInterval(id);
-      pos = 30;
-      elem.style.top = pos + 'px'; 
-    } else {
-    // pos++;
-      pos = pos + 5;
-      elem.style.top = pos + 'px'; 
-       
-    }
-  }
-  var allbricks = document.querySelectorAll("elementx");
-  allbricks.forEach(function(elementua) {
-      colision(elementua);
-  }, this);
-
-
-  function colision(elementua){
-      if (elementua.offsettop == pos && elementua.offsetleft == pos2){
-        elementua.style.visibility = "hidden"
-      }
-      
-    
-  }
-       
-    
-            } 
-            
-            
-            
+                var pos = 30;
+                var pos2 = 30;
+                var id = setInterval(frame, 1);
+                function frame() {
+                    if (pos == 780) {
+                        clearInterval(id);
+                        pos = 30;
+                        elem.style.top = pos + 'px'; 
+                    } else {
+                        // pos++;
+                        pos = pos + 5;
+                        elem.style.top = pos + 'px'; 
+                    }
+                    var allbricks = document.querySelectorAll(".elementx");
+                    allbricks.forEach(function(elementua) {
+                        colision(elementua, elem);
+                    }, this);                    
+                }
+            }
             document.getElementById("elementID").style.left = x + 'px';
-            document.getElementById("elementID2").style.left = x + 40 + 'px';
-                                        
+            document.getElementById("elementID2").style.left = x + 40 + 'px';            
         });
+        function colision(elementua, bullet){
+            if (elementua.offsetTop <= bullet.offsetTop && 
+                    (elementua.offsetLeft <= bullet.offsetLeft) && 
+                    ((elementua.offsetLeft + elementua.width) <= bullet.offsetLeft)) {
+                elementua.style.visibility = "hidden";
+            }
+        }
         function berrabiarazi(){
                     window.location.href = "game.html";
-            }
-        </script>
+        }
+    </script>
 
         
         
