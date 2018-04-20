@@ -1,0 +1,292 @@
+s (280 sloc)  14.3 KB
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />        
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body{
+        background-image: url(Images/Background.jpg);
+      
+    }
+    .menu{
+        
+    }
+    
+    
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">PokéMap</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Pokédex<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+</div>
+
+<!--Bulbasaur card -->
+<div class="None" style="display: none";>
+<div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
+    <img class="mx-auto d-block" src="Images/Bulbasaur.png" alt="Card image cap" style="width: 60%;">
+    <div class="card-body">
+      <h5 class="card-title"><img src="Images/Grass.png" style="width:35%;"><img src="Images/Poison.png" style="width:35%;"></h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+</div>
+
+<!--Ivysaur card -->
+<div class="None" style="display: none";>
+<div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
+  <img class="mx-auto d-block" src="Images/Ivysaur.png" alt="Card image cap" style="width: 60%;padding-top:12px;">
+  <div class="card-body">
+    <h5 class="card-title"><img src="Images/Grass.png" style="width:35%;"><img src="Images/Poison.png" style="width:35%;"></h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+<!--Venusaur card -->
+<div class="None" style="display: none";>
+  <div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
+    <img class="mx-auto d-block" src="Images/Venusaur.png" alt="Card image cap" style="width: 60%;">
+    <div class="card-body">
+      <h5 class="card-title"><img src="Images/Grass.png" style="width:35%;"><img src="Images/Poison.png" style="width:35%;"></h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  </div>
+  <!--Charmander card -->
+<div class="None" style="display: none";>
+  <div class="card" style="width: 18rem; height: 100%; margin-left:67%; margin-top:4%;">
+    <img class="mx-auto d-block" src="Images/Charmander.png" alt="Card image cap" style="width: 60%; padding-top:12px;">
+    <div class="card-body">
+      <h5 class="card-title"><img src="Images/Fire.jpg" style="width:35%;"></h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  </div>
+  <!--Charmaleon card -->
+<div class="None" style="display: none";>
+  <div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
+    <img class="mx-auto d-block" src="Images/Charmeleon.png" alt="Card image cap" style="width: 60%;">
+    <div class="card-body">
+      <h5 class="card-title"><img src="Images/Fire.jpg" style="width:35%;"></h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  </div>
+  <!--Charizard card -->
+<div class="None" style="display: non";>
+  <div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
+    <img class="mx-auto d-block" src="Images/Charizard.png" alt="Card image cap" style="width: 60%;">
+    <div class="card-body">
+      <h5 class="card-title"><img src="Images/Fire.jpg" style="width:35%;"><img src="Images/Flying.png" style="width:35%;"></h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  </div>
+  <!--Squirtle card -->
+<div class="None" style="display: none";>
+  <div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
+    <img class="mx-auto d-block" src="Images/Squirtle.png" alt="Card image cap" style="width: 60%; padding-top:12px;">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  </div>
+  <!--Wartortle card -->
+<div class="None" style="display: none";>
+  <div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
+    <img class="mx-auto d-block" src="Images/Wartortle.png" alt="Card image cap" style="width: 60%; padding-top:12px;">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  </div>
+  <!--Blastoise card -->
+<div class="None" style="display: none";>
+  <div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
+    <img class="mx-auto d-block" src="Images/Blastoise.png" alt="Card image cap" style="width: 60%; padding-top:12px;">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  </div>
+  <!--Rhyhorn card -->
+<div class="None" style="display: none";>
+  <div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
+    <img class="mx-auto d-block" src="Images/Rhyhorn.png" alt="Card image cap" style="width: 75%; padding-top:12px;">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  </div>
+  <!--Rhydon card -->
+<div class="None" style="display: none";>
+  <div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
+    <img class="mx-auto d-block" src="Images/Rhydon.png" alt="Card image cap" style="width: 60%; padding-top:12px;">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  </div>
+<!--Electabuzz card -->
+<div class="None" style="display: none";>
+  <div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
+    <img class="mx-auto d-block" src="Images/Electabuzz.png" alt="Card image cap" style="width: 60%; padding-top:12px;">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  </div>
+  <!--Kangaskhan card -->
+  <div class="None" style="display: none";>
+  <div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
+    <img class="mx-auto d-block" src="Images/Kangaskhan.png" alt="Card image cap" style="width: 60%; padding-top:12px">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  </div>
+  <!--Scyther card -->
+  <div class="None" style="display: none";>
+  <div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
+    <img class="mx-auto d-block" src="Images/Scyther.png" alt="Card image cap" style="width: 60%;padding-top:12px">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  </div>
+  <!--Sandshrew card -->
+  <div class="None" style="display: none";>
+  <div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
+    <img class="mx-auto d-block" src="Images/Sandshrew.png" alt="Card image cap" style="width: 60%;padding-top:12px">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  </div>
+  <!--Sandslash card -->
+  <div class="None" style="display: none";>
+  <div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
+    <img class="mx-auto d-block" src="Images/Sandslash.png" alt="Card image cap" style="width: 60%;padding-top:12px">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  </div>
+  <!--Snorlax card -->
+  <div class="None" style="display: none";>
+  <div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
+    <img class="mx-auto d-block" src="Images/Snorlax.png" alt="Card image cap" style="width: 60%;">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  </div>
+  <!--Gastly card -->
+  <div class="None" style="display: none";>
+  <div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
+    <img class="mx-auto d-block" src="Images/Gastly.png" alt="Card image cap" style="width: 60%;padding-top:12px">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  </div>
+  <!--Haunter card -->
+<div class="None" style="display: none";>
+  <div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
+    <img class="mx-auto d-block" src="Images/Haunter.png" alt="Card image cap" style="width: 60%;">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  </div>
+  <!--Gengar card -->
+  <div class="None" style="display: none";>
+  <div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
+    <img class="mx-auto d-block" src="Images/Gengar.png" alt="Card image cap" style="width: 60%;padding-top:12px">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   
+</body>
+</html>
