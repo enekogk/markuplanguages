@@ -1,4 +1,4 @@
-s (280 sloc)  14.3 KB
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,6 +18,18 @@ s (280 sloc)  14.3 KB
         
     }
     
+       #map {
+        height: 80%;
+        width: 60%;
+        margin-top: -20%;
+        margin-left: 5%;
+      }
+      
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
     
     </style>
 </head>
@@ -124,8 +136,8 @@ s (280 sloc)  14.3 KB
     <img class="mx-auto d-block" src="Images/Charizard.png" alt="Card image cap" style="width: 60%;">
     <div class="card-body">
       <h5 class="card-title"><img src="Images/Fire.jpg" style="width:35%;"><img src="Images/Flying.png" style="width:35%;"></h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <p class="card-text">When expelling a blast of superhot fire, the red flame at the tip of its tail burns more intensely.</p>
+      <a href="#" class="btn btn-primary">More info</a>
     </div>
   </div>
   </div>
@@ -288,5 +300,213 @@ s (280 sloc)  14.3 KB
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   
+
+    <div id="map">
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: new google.maps.LatLng(43.322352,-1.9803229999999985),
+          mapTypeId: 'roadmap'
+        });
+
+       
+        var icons = {
+          poke: {
+            url: '188920.png',
+            scaledSize: new google.maps.Size(50, 50),
+          }
+            
+          
+          
+        };
+
+        var features = [
+          {
+            position: new google.maps.LatLng(43.323109,-1.991072000000031),
+            type: 'poke'
+          }, 
+          {
+            position: new google.maps.LatLng(43.327279,-1.9715270000000373),
+            type: 'poke'
+          }, 
+          {
+            position: new google.maps.LatLng(43.325897,-1.974081999999953),
+            type: 'poke'
+          }, 
+          {
+            position: new google.maps.LatLng(43.324696,-1.975812000000019),
+            type: 'poke'
+          }, 
+          {
+            position: new google.maps.LatLng(43.32457,-1.9775459999999612),
+            type: 'poke'
+          }, 
+          {
+            position: new google.maps.LatLng(43.32372199999999,-1.9778370000000223),
+            type: 'poke'
+          }, 
+          {
+            position: new google.maps.LatLng(43.323694,-1.9797810000000027),
+            type: 'poke'
+          }, 
+          {
+            position: new google.maps.LatLng(43.3236587,-1.9806982),
+            type: 'poke'
+          },
+          {
+            position: new google.maps.LatLng(43.322939999999996,-1.9808249999999816),
+            type: 'poke'
+          },
+          {
+            position: new google.maps.LatLng(43.322821,-1.981616000000031),
+            type: 'poke'
+          },
+          {
+            position: new google.maps.LatLng(43.32257,-1.9815459999999803),
+            type: 'poke'
+          },
+          {
+            position: new google.maps.LatLng(43.324572999999994,-1.9817990000000236),
+            type: 'poke'
+          },
+          {
+            position: new google.maps.LatLng(43.32532299999999,-1.9835540000000265),
+            type: 'poke'
+          },
+
+          {
+            position: new google.maps.LatLng(43.325418,-1.9843899999999621),
+            type: 'poke'
+          },
+
+          {
+            position: new google.maps.LatLng(43.325849,-1.9847710000000234),
+            type: 'poke'
+          },
+
+          {
+            position: new google.maps.LatLng(43.325809,-1.9858329999999569),
+            type: 'poke'
+          },
+
+          {
+            position: new google.maps.LatLng(43.32534,-1.9876070000000254),
+            type: 'poke'
+          },
+
+          {
+            position: new google.maps.LatLng(43.326553,-1.990513999999962),
+            type: 'poke'
+          },
+          {
+            position: new google.maps.LatLng(43.326297,-1.9915700000000243),
+            type: 'poke'
+          },
+          {
+            position: new google.maps.LatLng(43.325171,-1.9925120000000334),
+            type: 'poke'
+          }, 
+          {
+            position: new google.maps.LatLng(43.324603999999994,-1.9928519999999708),
+            type: 'poke'
+          },
+          {
+            position: new google.maps.LatLng(43.324452,-1.99364300000002),
+            type: 'poke'
+          },
+          {
+            position: new google.maps.LatLng(43.326297,-1.9915700000000243),
+            type: 'poke'
+          },
+          {
+            position: new google.maps.LatLng(43.32214999999999,-1.9982989999999745),
+            type: 'poke'
+          },
+          {
+            position: new google.maps.LatLng(43.321134,-2.0000159999999596),
+            type: 'poke'
+          },
+          {
+            position: new google.maps.LatLng(43.322874,-1.991700000000037),
+            type: 'poke'
+          },
+          {
+            position: new google.maps.LatLng(43.32289,-1.9920299999999997),
+            type: 'poke'
+          },
+          {
+            position: new google.maps.LatLng(43.32357999999999,-1.9928089999999656),
+            type: 'poke'
+          },
+          {
+            position: new google.maps.LatLng(43.324452,-1.99364300000002),
+            type: 'poke'
+          },
+          {
+            position: new google.maps.LatLng(43.324147,-1.987190000000055),
+            type: 'poke'
+          },
+          {
+            position: new google.maps.LatLng(43.32364,-1.9880960000000414),
+            type: 'poke'
+          },
+          {
+            position: new google.maps.LatLng(43.322462,-1.9863189999999804),
+            type: 'poke'
+          },
+          {
+            position: new google.maps.LatLng(43.323067,-1.9873569999999745),
+            type: 'poke'
+          },
+          {
+            position: new google.maps.LatLng(43.322477,-1.9892670000000408),
+            type: 'poke'
+          },
+          {
+            position: new google.maps.LatLng(43.323067,-1.9873569999999745),
+            type: 'poke'
+          },
+          {
+            position: new google.maps.LatLng(43.322491,-1.9840269999999691),
+            type: 'poke'
+          },
+          {
+            position: new google.maps.LatLng(43.321583,-1.9862289999999803),
+            type: 'poke'
+          },
+          {
+            position: new google.maps.LatLng(43.322892,-1.9859139999999798),
+            type: 'poke'
+          },
+          {
+            position: new google.maps.LatLng(43.323201,-1.9867839999999433),
+            type: 'poke'
+          },
+          {
+            position: new google.maps.LatLng(43.32269699999999,-1.9868119999999863),
+            type: 'poke'
+          },
+
+
+
+        ];
+
+        // Create markers.
+        features.forEach(function(feature) {
+          var marker = new google.maps.Marker({
+            position: feature.position,
+            icon: icons.poke,
+            map: map
+          });
+        });
+        
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8bo2VWsUe8Z-Zo8PeCJQklWE0LPdbZrc&callback=initMap">
+    </script>
+</div>
 </body>
 </html>
