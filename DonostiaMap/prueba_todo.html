@@ -34,6 +34,9 @@
     </style>
 </head>
 <body>
+  <script>
+  document.getElementById("demo").innerHTML = features[0]
+  </script>
     
     <div class="container">
 
@@ -73,7 +76,16 @@
             </div>
           </nav>
 </div>
-
+<div class="None" style="display: non";>
+  <div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
+      <img class="mx-auto d-block" src="Images/silueta.png" alt="Card image cap" style="width: 60%;">
+      <div class="card-body">
+        <h5 class="card-title"><img src="" style="width:35%;"><img src="" style="width:35%;"></h5>
+        <p class="card-text">Click in a PokeStop to see new Pokemons!!</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
 <!--Bulbasaur card -->
 <div class="None" style="display: none";>
 <div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
@@ -131,7 +143,7 @@
   </div>
   </div>
   <!--Charizard card -->
-<div class="None" style="display: non";>
+<div class="None" style="display: none";>
   <div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
     <img class="mx-auto d-block" src="Images/Charizard.png" alt="Card image cap" style="width: 60%;">
     <div class="card-body">
@@ -325,7 +337,8 @@
         var features = [
           {
             position: new google.maps.LatLng(43.323109,-1.991072000000031),
-            type: 'poke'
+            type: 'poke',
+            
           }, 
           {
             position: new google.maps.LatLng(43.327279,-1.9715270000000373),
