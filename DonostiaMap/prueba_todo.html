@@ -14,9 +14,7 @@
         background-image: url(Images/Background.jpg);
       
     }
-    .menu{
-        
-    }
+    
     
        #map {
         height: 80%;
@@ -35,7 +33,11 @@
 </head>
 <body>
   <script>
-  document.getElementById("demo").innerHTML = features[0]
+  
+  var zenbakia = Math.floor((Math.random()* 20) +1);
+  
+  
+  
   </script>
     
     <div class="container">
@@ -76,7 +78,7 @@
             </div>
           </nav>
 </div>
-<div class="None" style="display: non";>
+<div class="check" style="display: non" id="1";>
   <div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
       <img class="mx-auto d-block" src="Images/silueta.png" alt="Card image cap" style="width: 60%;">
       <div class="card-body">
@@ -87,7 +89,7 @@
     </div>
   </div>
 <!--Bulbasaur card -->
-<div class="None" style="display: none";>
+<div class="check" style="display: none" id="2";>
 <div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
     <img class="mx-auto d-block" src="Images/Bulbasaur.png" alt="Card image cap" style="width: 60%;">
     <div class="card-body">
@@ -99,7 +101,7 @@
 </div>
 
 <!--Ivysaur card -->
-<div class="None" style="display: none";>
+<div class="check" style="display: none" id="3";>
 <div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
   <img class="mx-auto d-block" src="Images/Ivysaur.png" alt="Card image cap" style="width: 60%;padding-top:12px;">
   <div class="card-body">
@@ -110,7 +112,7 @@
 </div>
 </div>
 <!--Venusaur card -->
-<div class="None" style="display: none";>
+<div class="check" style="display: none" id="4";>
   <div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
     <img class="mx-auto d-block" src="Images/Venusaur.png" alt="Card image cap" style="width: 60%;">
     <div class="card-body">
@@ -121,7 +123,7 @@
   </div>
   </div>
   <!--Charmander card -->
-<div class="None" style="display: none";>
+<div class="check" style="display: none" id="5";>
   <div class="card" style="width: 18rem; height: 100%; margin-left:67%; margin-top:4%;">
     <img class="mx-auto d-block" src="Images/Charmander.png" alt="Card image cap" style="width: 60%; padding-top:12px;">
     <div class="card-body">
@@ -132,7 +134,7 @@
   </div>
   </div>
   <!--Charmaleon card -->
-<div class="None" style="display: none";>
+<div class="check" style="display: none" id="6";>
   <div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
     <img class="mx-auto d-block" src="Images/Charmeleon.png" alt="Card image cap" style="width: 60%;">
     <div class="card-body">
@@ -143,7 +145,7 @@
   </div>
   </div>
   <!--Charizard card -->
-<div class="None" style="display: none";>
+<div class="check" style="display: none" id="6";>
   <div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
     <img class="mx-auto d-block" src="Images/Charizard.png" alt="Card image cap" style="width: 60%;">
     <div class="card-body">
@@ -154,7 +156,7 @@
   </div>
   </div>
   <!--Squirtle card -->
-<div class="None" style="display: none";>
+<div class="check" style="display: none" id="7";>
   <div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
     <img class="mx-auto d-block" src="Images/Squirtle.png" alt="Card image cap" style="width: 60%; padding-top:12px;">
     <div class="card-body">
@@ -165,7 +167,7 @@
   </div>
   </div>
   <!--Wartortle card -->
-<div class="None" style="display: none";>
+<div class="check" style="display: none" id="8";>
   <div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
     <img class="mx-auto d-block" src="Images/Wartortle.png" alt="Card image cap" style="width: 60%; padding-top:12px;">
     <div class="card-body">
@@ -176,7 +178,7 @@
   </div>
   </div>
   <!--Blastoise card -->
-<div class="None" style="display: none";>
+<div class="check" style="display: none" id="9";>
   <div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
     <img class="mx-auto d-block" src="Images/Blastoise.png" alt="Card image cap" style="width: 60%; padding-top:12px;">
     <div class="card-body">
@@ -187,7 +189,7 @@
   </div>
   </div>
   <!--Rhyhorn card -->
-<div class="None" style="display: none";>
+<div class="check" style="display: none" id="10";>
   <div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
     <img class="mx-auto d-block" src="Images/Rhyhorn.png" alt="Card image cap" style="width: 75%; padding-top:12px;">
     <div class="card-body">
@@ -198,7 +200,7 @@
   </div>
   </div>
   <!--Rhydon card -->
-<div class="None" style="display: none";>
+<div class="check" style="display: none" id="11";>
   <div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
     <img class="mx-auto d-block" src="Images/Rhydon.png" alt="Card image cap" style="width: 60%; padding-top:12px;">
     <div class="card-body">
@@ -209,7 +211,7 @@
   </div>
   </div>
 <!--Electabuzz card -->
-<div class="None" style="display: none";>
+<div class="check" style="display: none" id="12";>
   <div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
     <img class="mx-auto d-block" src="Images/Electabuzz.png" alt="Card image cap" style="width: 60%; padding-top:12px;">
     <div class="card-body">
@@ -220,7 +222,7 @@
   </div>
   </div>
   <!--Kangaskhan card -->
-  <div class="None" style="display: none";>
+  <div class="check" style="display: none" id="13";>
   <div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
     <img class="mx-auto d-block" src="Images/Kangaskhan.png" alt="Card image cap" style="width: 60%; padding-top:12px">
     <div class="card-body">
@@ -231,7 +233,7 @@
   </div>
   </div>
   <!--Scyther card -->
-  <div class="None" style="display: none";>
+  <div class="check" style="display: none" id="14";>
   <div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
     <img class="mx-auto d-block" src="Images/Scyther.png" alt="Card image cap" style="width: 60%;padding-top:12px">
     <div class="card-body">
@@ -242,7 +244,7 @@
   </div>
   </div>
   <!--Sandshrew card -->
-  <div class="None" style="display: none";>
+  <div class="check" style="display: none" id="15";>
   <div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
     <img class="mx-auto d-block" src="Images/Sandshrew.png" alt="Card image cap" style="width: 60%;padding-top:12px">
     <div class="card-body">
@@ -253,7 +255,7 @@
   </div>
   </div>
   <!--Sandslash card -->
-  <div class="None" style="display: none";>
+  <div class="check" style="display: none" id="16";>
   <div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
     <img class="mx-auto d-block" src="Images/Sandslash.png" alt="Card image cap" style="width: 60%;padding-top:12px">
     <div class="card-body">
@@ -264,7 +266,7 @@
   </div>
   </div>
   <!--Snorlax card -->
-  <div class="None" style="display: none";>
+  <div class="check" style="display: none" id="17";>
   <div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
     <img class="mx-auto d-block" src="Images/Snorlax.png" alt="Card image cap" style="width: 60%;">
     <div class="card-body">
@@ -275,7 +277,7 @@
   </div>
   </div>
   <!--Gastly card -->
-  <div class="None" style="display: none";>
+  <div class="check" style="display: none" id="18";>
   <div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
     <img class="mx-auto d-block" src="Images/Gastly.png" alt="Card image cap" style="width: 60%;padding-top:12px">
     <div class="card-body">
@@ -286,7 +288,7 @@
   </div>
   </div>
   <!--Haunter card -->
-<div class="None" style="display: none";>
+<div class="check" style="display: none" id="19";>
   <div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
     <img class="mx-auto d-block" src="Images/Haunter.png" alt="Card image cap" style="width: 60%;">
     <div class="card-body">
@@ -297,7 +299,7 @@
   </div>
   </div>
   <!--Gengar card -->
-  <div class="None" style="display: none";>
+  <div class="check" style="display: none" id="20";>
   <div class="card" style="width: 18rem; margin-left:67%; margin-top:4%;">
     <img class="mx-auto d-block" src="Images/Gengar.png" alt="Card image cap" style="width: 60%;padding-top:12px">
     <div class="card-body">
@@ -339,6 +341,7 @@
             position: new google.maps.LatLng(43.323109,-1.991072000000031),
             type: 'poke',
             
+            
           }, 
           {
             position: new google.maps.LatLng(43.327279,-1.9715270000000373),
@@ -376,18 +379,12 @@
             position: new google.maps.LatLng(43.322821,-1.981616000000031),
             type: 'poke'
           },
-          {
-            position: new google.maps.LatLng(43.32257,-1.9815459999999803),
-            type: 'poke'
-          },
+          
           {
             position: new google.maps.LatLng(43.324572999999994,-1.9817990000000236),
             type: 'poke'
           },
-          {
-            position: new google.maps.LatLng(43.32532299999999,-1.9835540000000265),
-            type: 'poke'
-          },
+          
 
           {
             position: new google.maps.LatLng(43.325418,-1.9843899999999621),
@@ -399,10 +396,7 @@
             type: 'poke'
           },
 
-          {
-            position: new google.maps.LatLng(43.325809,-1.9858329999999569),
-            type: 'poke'
-          },
+          
 
           {
             position: new google.maps.LatLng(43.32534,-1.9876070000000254),
@@ -417,90 +411,39 @@
             position: new google.maps.LatLng(43.326297,-1.9915700000000243),
             type: 'poke'
           },
-          {
-            position: new google.maps.LatLng(43.325171,-1.9925120000000334),
-            type: 'poke'
-          }, 
+          
           {
             position: new google.maps.LatLng(43.324603999999994,-1.9928519999999708),
             type: 'poke'
           },
-          {
-            position: new google.maps.LatLng(43.324452,-1.99364300000002),
-            type: 'poke'
-          },
-          {
-            position: new google.maps.LatLng(43.326297,-1.9915700000000243),
-            type: 'poke'
-          },
-          {
-            position: new google.maps.LatLng(43.32214999999999,-1.9982989999999745),
-            type: 'poke'
-          },
+          
+          
+         
           {
             position: new google.maps.LatLng(43.321134,-2.0000159999999596),
             type: 'poke'
           },
-          {
-            position: new google.maps.LatLng(43.322874,-1.991700000000037),
-            type: 'poke'
-          },
-          {
-            position: new google.maps.LatLng(43.32289,-1.9920299999999997),
-            type: 'poke'
-          },
-          {
-            position: new google.maps.LatLng(43.32357999999999,-1.9928089999999656),
-            type: 'poke'
-          },
+          
+          
+         
           {
             position: new google.maps.LatLng(43.324452,-1.99364300000002),
             type: 'poke'
           },
-          {
-            position: new google.maps.LatLng(43.324147,-1.987190000000055),
-            type: 'poke'
-          },
-          {
-            position: new google.maps.LatLng(43.32364,-1.9880960000000414),
-            type: 'poke'
-          },
-          {
-            position: new google.maps.LatLng(43.322462,-1.9863189999999804),
-            type: 'poke'
-          },
-          {
-            position: new google.maps.LatLng(43.323067,-1.9873569999999745),
-            type: 'poke'
-          },
-          {
-            position: new google.maps.LatLng(43.322477,-1.9892670000000408),
-            type: 'poke'
-          },
-          {
-            position: new google.maps.LatLng(43.323067,-1.9873569999999745),
-            type: 'poke'
-          },
-          {
-            position: new google.maps.LatLng(43.322491,-1.9840269999999691),
-            type: 'poke'
-          },
+          
+          
+          
+         
+          
+          
+          
           {
             position: new google.maps.LatLng(43.321583,-1.9862289999999803),
             type: 'poke'
           },
-          {
-            position: new google.maps.LatLng(43.322892,-1.9859139999999798),
-            type: 'poke'
-          },
-          {
-            position: new google.maps.LatLng(43.323201,-1.9867839999999433),
-            type: 'poke'
-          },
-          {
-            position: new google.maps.LatLng(43.32269699999999,-1.9868119999999863),
-            type: 'poke'
-          },
+          
+          
+          
 
 
 
@@ -513,7 +456,15 @@
             icon: icons.poke,
             map: map
           });
+
+          marker.addListener('click', function(){
+            var zenbakia = Math.floor((Math.random()* 20) +1);
+            console.log(zenbakia);
+            // document.getElementsById(zenbakia).;
+          });
         });
+
+        
         
       }
     </script>
