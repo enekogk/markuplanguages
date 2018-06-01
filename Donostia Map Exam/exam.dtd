@@ -1,6 +1,15 @@
-<!ELEMENT mapa (stop)>
+<?xml version="1.0"?>
+<!DOCTYPE map [
 <!ELEMENT stop (position, type)>
 <!ELEMENT position (lat, long)>
 <!ELEMENT lat (#PCDATA)>
 <!ELEMENT long (#PCDATA)>
-<!ELEMENT type (#PCDATA)> 
+<!ELEMENT type (#PCDATA)>
+]>
+<map>
+    <stop>
+        <lat>43.323109</from>
+        <long>-1.991072000000031</heading>
+    </stop>
+    <type>poke</type>
+</map>
