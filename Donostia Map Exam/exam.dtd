@@ -1,0 +1,6 @@
+<!ELEMENT mapa (stop)>
+<!ELEMENT stop (position, type)>
+<!ELEMENT position (lat, long)>
+<!ELEMENT lat (#PCDATA)>
+<!ELEMENT long (#PCDATA)>
+<!ELEMENT type (#PCDATA)> 
